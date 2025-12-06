@@ -1,0 +1,17 @@
+.goal-progress-circle-container {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    font-family: Georgia, serif;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    color: #4e342e;
+
+}
+
+.goal-progress-circle {
+    color: #4e342e;
+}
+
+.progress-report {
+    font-size: 25px;
+}

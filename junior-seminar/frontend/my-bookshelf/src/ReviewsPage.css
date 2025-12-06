@@ -1,0 +1,52 @@
+.user-review {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 20px;
+    max-width: 1000px;
+    background-color: #fafafa;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    width: auto;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.user-review-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+    flex-direction: column;
+
+}
+
+#avatar {
+    width: 60px;
+
+}
+
+.user-review-header strong {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #222;
+}
+
+.review-content {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.4;
+}
+
+.edit-review {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: fit-content;
+    width: fit-content;
+    margin-top: 30px;
+}
+
+.user-review-body {
+    padding-top: 0px;
+    margin-top: 20px;
+}

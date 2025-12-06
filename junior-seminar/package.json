@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.7",
+    "csv-parser": "^3.2.0",
+    "fs": "^0.0.1-security",
+    "idb": "^8.0.3",
+    "react-bootstrap": "^2.10.10",
+    "react-circular-progressbar": "^2.2.0",
+    "react-hot-toast": "^2.5.2",
+    "react-toastify": "^11.0.5"
+  }
+}

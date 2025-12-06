@@ -1,0 +1,98 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id       Int    @id @default(autoincrement())
+  username String @unique
+  password String
+  bookshelves Bookshelf[]
+  reflections Reflection[]
+  goals Goal[]
+  reviews Review[]
+}
+
+model Goal {
+  id Int @id @default(autoincrement())
+  user User @relation(fields: [userId], references: [id])
+  userId Int
+  createdAt DateTime @default(now())
+  target Int
+  year Int
+  @@unique([userId, year])
+  isPublic Boolean @default(false)
+}
+
+model Book {
+title String
+  authors String[]
+  cover String?
+  description String?
+  genres String[]
+  bookshelf Bookshelf? @relation("BooksOnShelf", fields: [bookshelfId], references: [id])
+  bookshelfId Int?
+  googleId String  @id
+  createdAt DateTime @default(now())
+  reflections Reflection[]
+  reviews Review[]
+}
+
+enum Bookshelfname {
+  CurrentlyReading
+  WanttoRead
+  Read
+}
+model Bookshelf{
+  id Int @id @default(autoincrement())
+  name Bookshelfname
+  user User  @relation(fields: [userId], references: [id])
+  userId Int
+  books Book[] @relation("BooksOnShelf")
+}
+
+model Reflection{
+  id Int @id @default(autoincrement())
+  userId Int
+  user User @relation(fields: [userId], references: [id])
+  googleId String
+  book Book @relation(fields: [googleId ], references: [googleId])
+  content String
+  createdAt DateTime @default(now())
+  @@unique([userId, googleId])
+}
+
+model Review{
+  id Int @id @default(autoincrement())
+  userId Int
+  user User @relation(fields: [userId], references: [id])
+  googleId String
+  book Book @relation(fields: [googleId ], references: [googleId])
+  content String
+  rating Int
+  @@unique([userId, googleId])
+}
+
+model RecBook {
+  id Int @id @default(autoincrement())
+  googleId     String   @unique
+  title          String
+  description    String?
+  authors        String[]
+  categories     String[]
+  averageRating  Float?
+  maturityRating String?
+  pageCount      Int?
+  categoryVector Json?
+}

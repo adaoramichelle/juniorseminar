@@ -1,0 +1,70 @@
+.goals-button {
+    margin-top: 250px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.goal-content {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 60px;
+}
+
+
+.user-name {
+    width: 150px;
+}
+
+.is-public {
+    width: 20px;
+    height: 20px;
+}
+
+.user-goal {
+    width: 100%;
+    max-width: 100%;
+    background: #f9f6f2;
+    display: flex;
+    gap: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+    padding: 18px 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+
+.back-arrow {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+#goBack {
+    font-size: 50px;
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    .user-goal {
+        flex-direction: column;
+        padding: 10px 10px;
+        gap: 10px;
+    }
+
+    .user-name {
+        width: 100%;
+    }
+}

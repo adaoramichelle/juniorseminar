@@ -1,0 +1,47 @@
+.username {
+    height: 50px;
+    width: 500px;
+}
+
+.password {
+    height: 50px;
+    width: 500px;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    text-align: left;
+    font-size: 50px;
+}
+
+.signup {
+    width: fit-content;
+    font-size: 30px;
+    margin-top: 30px;
+
+}
+
+h4 {
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 10px;
+
+}
+
+.message {
+    font-size: 40px;
+}
+
+.title {
+    font-family: "Dancing Script", cursive;
+    font-size: 150px;
+    margin-bottom: 0px;
+}
+
+form {
+    font-family: "Montserrat", sans-serif;
+}

@@ -1,0 +1,139 @@
+.username {
+    height: 50px;
+    width: 500px;
+    font-size: 50px;
+}
+
+.password {
+    height: 50px;
+    width: 500px;
+    font-size: 50px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    text-align: left;
+    font-size: 50px;
+}
+
+.login {
+    width: fit-content;
+    font-size: 30px;
+    margin-top: 30px;
+
+}
+
+h4 {
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 10px;
+
+}
+
+.message {
+    font-size: 40px;
+}
+
+.title {
+    font-family: "Dancing Script", cursive;
+    font-size: 150px;
+    margin-bottom: 0px;
+}
+
+form {
+    font-family: "Montserrat", sans-serif;
+}
+
+.login-page {
+    max-width: 400px;
+    width: 90%;
+
+}
+
+
+
+
+
+@media (max-width:480px) {
+    .title {
+        font-size: 30px;
+    }
+
+    label {
+        font-size: 20px;
+    }
+
+    .login-form {
+        width: 100%;
+    }
+
+    .username {
+        width: 50%;
+        height: 10px;
+        font-size: 8px;
+    }
+
+    .password {
+        width: 50%;
+        height: 10px;
+        font-size: 8px;
+    }
+
+    .message {
+        font-size: 12px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    .login {
+        width: 40%;
+        height: 5%;
+        font-size: 5px;
+    }
+}
+
+@media (max-width:1280px) {
+    .title {
+        font-size: 50px;
+    }
+
+    label {
+        font-size: 40px;
+    }
+
+    .login-form {
+        width: 100%;
+    }
+
+    .username {
+        width: 80%;
+        height: 20px;
+        font-size: 18px;
+    }
+
+    .password {
+        width: 80%;
+        height: 20px;
+        font-size: 8px;
+    }
+
+    .message {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    .login {
+        width: 40%;
+        height: 5%;
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,125 @@
+.books {
+    max-height: 600px;
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 1rem;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.title-rating {
+    width: 500px;
+}
+
+.book-card {
+    width: 100%;
+    max-width: 700px;
+    box-sizing: border-box;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    justify-content: space-around;
+}
+
+
+.accordion-section {
+    margin: 1.5rem auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 900px;
+    width: 90%;
+}
+
+.accordion-header {
+    background: #6b4c3b;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: background 0.3s ease;
+}
+
+.accordion-header:hover {
+    background-color: #ede2d4;
+    color: #6b4c3b;
+    border-color: #6b4c3b;
+}
+
+.accordion-icon {
+    font-size: 1.5rem;
+    line-height: 1;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.accordion-icon.open {
+    transform: rotate(180deg);
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    background: #fdfaf1;
+    padding: 0 1.5rem;
+}
+
+.accordion-content.open {
+    max-height: 1000px;
+    padding: 1rem 1.5rem;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    position: relative;
+}
+
+#goBack {
+    position: fixed;
+    top: 15px;
+    left: 30px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+
+.my-books {
+    flex: 1;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0;
+
+}
+
+@media (max-width: 700px) {
+    .accordion-section {
+        width: 100%;
+        max-width: 100%;
+        border-left: none;
+        border-right: none;
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .accordion-section {
+        width: 200px;
+        max-width: 100%;
+        border-left: none;
+        border-right: none;
+        border-radius: 0;
+    }
+}

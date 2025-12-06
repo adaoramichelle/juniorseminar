@@ -1,0 +1,35 @@
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #ede2d4;
+    overflow-x: hidden;
+    transition: 0.3s ease;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar.open {
+    width: 250px;
+}
+
+.logout-button {
+    margin-top: 10px;
+}
+
+#closeIcon {
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+.view-bookshelf {
+    margin-bottom: 10px;
+    width: fit-content;
+    margin-top: 20px;
+}

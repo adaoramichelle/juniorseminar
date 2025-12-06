@@ -1,0 +1,14 @@
+.genre-books {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+    flex-wrap: wrap;
+
+}
+
+.book-category {
+    text-align: left;
+    margin-left: 120px;
+    font-family: Montserrat, Roboto, Noto, sans-serif;
+}
