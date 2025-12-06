@@ -1,15 +1,7 @@
 # MyBookShelf
 MyBookShelf is a smart bookshelf web app designed for readers to search, organize, reflect, and track their reading journeys. It features AI-generated reflection prompts, book recommendations, and custom bookshelf organization powered by Gemini, Redis caching, and Google Books API.
 
-## 🔗 Links
-- Live App: [Insert in week 9](insert in week 9)
-- Demo Video: [Watch on Loom](Insert in week 9)
-- Final Presentation: View Slides](Insert in week 9)
-- 📁 Frontend Repo [(GitHub)](https://github.com/Adaora-Igwe-MetaU-Capstone/MyBookShelf/tree/main/frontend/my-bookshelf)
-- 📁 Backend Repo [(GitHub)]( https://github.com/Adaora-Igwe-MetaU-Capstone/MyBookShelf/tree/main/backend)
- ## Preview
- ## Links
-Project plan [(doc)](https://docs.google.com/document/d/1g8-Vpt5ZTz0TbIbMZ1tTdJlUGBq1ECdgRArEm5Ux-DM/edit?tab=t.0)
+
 ## Features
 - Search for books using Google Books API
 - Add books to your personal library
@@ -44,33 +36,7 @@ Backend
 - IndexDB
 - dotenv for secure config
 
-  ## ⚙️ Installation & Setup
-1. Clone Repos
-
-```bash
-git clone https://github.com/Adaora-Igwe-MetaU-Capstone/MyBookShelf/tree/main/frontend/my-bookshelf
-git clone https://github.com/Adaora-Igwe-MetaU-Capstone/MyBookShelf/tree/main/backend
-```
-2. Install Dependencies
- ```bash
-bashcd my-bookshelf
-npm install
-cd ../backend
-npm install
-  ```
-### 🌐 Environment Variable
-Create a .env file in the root directory of the backend with the following variables:
-Run App Locally
-### Backend
-```bash
-cd backend
-npm run dev
-```
-### Frontend
-```bash
-cd frontend/spot-on
-npm run dev
-```
+ 
 ## Author
 Adaora Michelle Igwe
 ## Resources
